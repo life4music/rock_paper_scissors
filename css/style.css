@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: roboto, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  border: 2px solid #333;
+  width: 95%;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  margin: 30px 0;
+  color: darkgoldenrod;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.select {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.select img {
+  width: 200px;
+  margin: 20px;
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+.select img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+button {
+  display: block;
+  padding: 5px 20px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-weight: bold;
+  margin: 10px auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.panel-left,
+.panel-right {
+  display: inline-block;
+  width: 48%;
+  overflow: hidden;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.panel-left h3,
+.panel-right h3 {
+  text-align: center;
+}
+
+.panel-left span,
+.panel-right span {
+  font-weight: bold;
+}
+
+.panel-left p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    height: 95%;
+    width: 97%;
+    margin: 5px auto;
+  }
+  .select img {
+    width: 180px;
+    margin: 25px 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  .select img {
+    width: 100px;
+    margin: 10px;
+  }
+  .panel-left {
+    margin-bottom: 55px;
+  }
+  .panel-left p {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+  .select img {
+    width: 90px;
+    margin: 10px;
+  }
+  .panel-left {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1,
+  h3 {
+    margin: 15px 0;
+  }
+  .select img {
+    width: 70px;
+    margin: 10px;
+  }
+  .panel-right {
+    margin: 10px auto;
+  }
+  .panel-left {
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  h1,
+  h3 {
+    margin: 10px 0;
+  }
+  .select img {
+    width: 150px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 568px) and (orientation: landscape) {
+  h1,
+  h3 {
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .select img {
+    width: 120px;
+    margin: 12px;
+  }
+  .panel-left p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

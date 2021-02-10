@@ -1,0 +1,68 @@
+=sizing($width, $margin)
+  width: $width
+  margin: $margin
+
+@media (max-width: 768px)
+  .wrap
+    height: 95%
+    +sizing(97%, 5px auto)
+
+  .select img
+    +sizing(180px, 25px 10px)
+
+@media (max-width: 414px)
+  .select img
+    +sizing(100px, 10px)
+
+  .panel-left
+    margin-bottom: 55px
+    p
+      font-size: 15px
+
+  h2
+    font-size: 20px
+
+@media (max-width: 376px)
+  .select img
+    +sizing(90px, 10px)
+
+  .panel-left
+    margin-bottom: 40px
+
+@media (max-width: 320px)
+  h1,
+  h3
+    margin: 15px 0
+
+  .select img
+    +sizing(70px, 10px)
+
+  .panel-right
+    margin: 10px auto
+
+  .panel-left
+    margin: 5px auto
+
+@media (max-width: 812px) and (orientation: landscape)
+
+  h1,
+  h3
+    margin: 10px 0
+
+  .select img
+    +sizing(150px, 15px)
+
+@media (max-width: 568px) and (orientation: landscape)
+
+  h1,
+  h3
+    margin: 10px 0
+
+  h2
+    font-size: 25px
+
+  .select img
+    +sizing(120px, 12px)
+
+  .panel-left p
+    font-size: 16px
